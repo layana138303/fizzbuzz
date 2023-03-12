@@ -32,4 +32,16 @@ final class CalculatorTest extends TestCase
 
         $this->assertEquals(2, $result);
     }
+
+    /**
+     * @test
+     */
+    public function shouldDivideTwoArguments()
+    {
+        $calculator = new Calculator();
+
+        $result = $calculator->division(4., 2.);
+
+        $this->assertEquals(2., $result);
+    }
 }
